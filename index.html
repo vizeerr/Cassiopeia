@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassiopeia ~ Home</title>
+    <link rel="stylesheet" href="system/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cinzel+Decorative&family=Cormorant:wght@300&family=EB+Garamond&family=Flamenco:wght@300&family=Great+Vibes&family=Josefin+Sans:wght@100;200;300;400;500;600&family=Josefin+Slab:wght@100;200;300;400;500;600&family=Jost:wght@100;200;300;400;500&family=Kalam:wght@300;400&family=Krub:wght@200&family=Marcellus&family=Mate+SC&family=Poiret+One&family=Poppins:wght@100;200;300&family=Raleway:wght@100;200;300;400&family=Space+Grotesk:wght@300;400;500&family=Tangerine&family=Tenor+Sans&family=Voltaire&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="bgcont">
+            <!-- <img id="wallpaper" src="images/vivekimg.png" alt="">  -->
+             <video  id="wallpaper" src="/images/vivekvid.mp4" loop autoplay></video>
+        </div>
+        <div class="maincont">
+            <div class="section " id="timesec">
+                <p id="day" class="editableRele">~</p>
+                <p id = "sec" class="editableRele">00</p>
+                <h1 id="time" class="time editableRele" >00:00</h1>
+                <h1 id="greeting" class="editableRele"> Good</h1>
+            </div>
+            <hr style="width:25%;" id="horizontal" class="editableRele">
+            <div class="section">
+                <p id="quote" class="editableRele">
+                    "Today is Great."
+                </p>
+            </div>
+            <!-- <div class="editableRele" > -->
+                <h1 id="name" class="editableRele">Vivek Sagar</h1>
+            <!-- </div> -->
+        </div>
+        
+        <div class="addtasklogo" id = "addtasklogo">
+            <img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/to-do.png" alt="add--v1"/>
+        </div>
+        
+        <div id = "task" class="taskshower editableAbsol">
+            <div class="dots">
+                <div>
+                    <div id="closetaskIt" style="background:#FF5D5B;border: 4px solid #CF544D; " class="circleNav"></div>
+                    <div id="mintaskIt" style="background: #FFBB39;border: 4px solid #CFA64E;" class="circleNav"></div>
+                    <div id="maxtaskIt" style="background: #00CD4E;border: 4px solid #0EA642;" class="circleNav"></div>
+                </div>
+            </div>
+            <p> Tasks</p>
+            <ul id="tasklist">
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="container overly" id="tskcon">
+        <div id="addtasks">
+            <form action="" id="tasktaker">
+                <input id="gottask" placeholder="Got Task ?" type="text" name="taskval" >
+                <select id="timeSelect">
+                    <option value="ON">ON</option>
+                    <option value="OFF">OFF</option>
+                    <option value="Schedule">SCHEDULE</option>
+                </select>
+                <input type="datetime-local" id="timeInput">
+            </form>
+        </div>
+    </div>
+    <div class="footlog" id = "footset">
+        <img id="setico" width="48" height="48" src="https://img.icons8.com/carbon-copy/100/FFFFFF/settings.png" alt="add--v1"/>
+        <div id="hidediv">
+            <img id="editico" width="35" height="35" src="https://img.icons8.com/ios/50/FFFFFF/pencil--v1.png" alt="pencil--v1"/>
+            <img id = "pomodora" width="38" height="38" src="https://img.icons8.com/dotty/80/FFFFFF/stopwatch.png" alt="stopwatch"/>
+            <img id="tabsaver" width="45" height="45" src="https://img.icons8.com/carbon-copy/100/FFFFFF/bookmark-ribbon--v1.png" alt="bookmark-ribbon--v1"/>
+            <img id="pagesaver" width="40" height="40" src="https://img.icons8.com/external-smashingstocks-hand-drawn-black-smashing-stocks/99/FFFFFF/external-Notes-family-life-smashingstocks-hand-drawn-black-smashing-stocks.png" alt="external-Notes-family-life-smashingstocks-hand-drawn-black-smashing-stocks"/>
+            <img width="35" height="35" src="https://img.icons8.com/metro/35/FFFFFF/like.png" alt="like"/>
+        </div>
+        
+
+    </div>
+    <div class="container overly" id="editBag">
+        <div id="editwindow" >
+            <h1>Edit Mode</h1>
+            <div>
+
+                <button id="exitEdit">Exit</button>
+                <img id="editreset" width="25" height="25" src="https://img.icons8.com/ios/50/FFFFFF/rotate--v1.png" alt="rotate--v1"/>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container overly" id="setbag">
+        <div class="settingTab" id="settingTab"> 
+        <h1>Settings</h1>
+        <div class="content">
+            <div class="navtabs">
+                <ul id = "settingList">
+                    
+                </ul>
+                <li id="setReset"> <img width="19" height="19" src="https://img.icons8.com/ios/50/FFFFFF/rotate--v1.png" alt="rotate--v1"/> Reset</li>
+                <li id="setReset"> <img width="19" height="19" src="https://img.icons8.com/ios/50/FFFFFF/rotate--v1.png" alt="rotate--v1"/> Undo</li>
+            </div>
+            <div class="tabdata" id = "tabdata">
+               
+            </div>
+        </div>
+        
+        </div> 
+    </div>
+    <div class="container overly" id="pomodoraSet">
+        <div class="dots">
+            <div>
+                <div id="closeIt" style="background:#FF5D5B;border: 4px solid #CF544D; " class="circleNav"></div>
+                <div id="minIt" style="background: #FFBB39;border: 4px solid #CFA64E;" class="circleNav"></div>
+                <div id="maxIt" style="background: #00CD4E;border: 4px solid #0EA642;" class="circleNav"></div>
+            </div>
+        </div>
+        <div id="pomosection" >
+            <h1>Pomodora</h1>
+            <p id="pmtext">30:00</p>
+            <div>
+                <button id="pmbtn">Start</button>
+                <img id="pmreset" width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/rotate--v1.png" alt="rotate--v1"/>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container overly" id="saveTab">
+        <div class="navSave"> 
+            <div class="navhead">
+                <p> Open Tabs <img width="35" height="35" src="https://img.icons8.com/ios/30/FFFFFF/tab.png"></p>
+                <button id="newCollection"> New Collection</button>
+            </div>
+            <ul id="tablist">
+            </ul>
+        </div>
+        <div class="saveContainer">
+            <div class="tabdrop">
+                <div class="mainTabHead">
+                    <h1>Saved Tabs </h1>
+                    <img id = "closeSave" width="50" height="50" src="https://img.icons8.com/ios/30/FFFFFF/delete-sign--v1.png" alt="delete-sign--v1"/>
+                    <div class="searchCont">
+                        <input type="text" id="searchbar">
+                        <img width="35" height="35" src="https://img.icons8.com/ios/50/AAAAAA/search--v1.png" alt="search--v1"/>
+                    </div>
+                </div>
+                <div id="addCollection">
+                    <form action="" id="collform">
+                        <input type="text" id="collectName" placeholder="Collection Name?">
+                    </form>
+                    <div class="tabbox">
+                        <ul id="tabsavelist"></ul>
+                    </div>
+                </div>
+                <!-- <div class="topbar">
+    
+                        <p>Expand All <img src="https://img.icons8.com/ios/50/FFFFFF/expand-arrow--v2.png"> </p>
+                        <p>Collapse All <img style="transform: rotate(180deg);"src="https://img.icons8.com/ios/50/FFFFFF/expand-arrow--v2.png"> </p>
+                    
+                </div> -->
+                <div class="allCollection">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="multinav">
+
+            <div class="navSave navfav">
+                <div class="navhead">
+                    <p> Favorites <img width="35" height="35" src="https://img.icons8.com/ios/30/FFFFFF/add-to-favorites--v1.png" > </p>
+                    <!-- <button id="newCollection"> New Collection</button> -->
+            </div>
+            <ul id="favtab">
+            </ul>
+        </div>
+        <div class="navSave navfav">
+            <div class="navhead">
+                <p> Categories <img width="35" height="35" src="https://img.icons8.com/ios/50/FFFFFF/sorting-answers.png" > </p>
+                <!-- <button id="newCollection"> New Collection</button> -->
+            </div>
+            <ul id="cattab">
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="savePop">
+        <div class="navSave navfav">
+            <div class="dots">
+                <div>
+                    <div id="closetaskIt" style="background:#FF5D5B;border: 4px solid #CF544D; " class="circleNav"></div>
+                    <div id="mintaskIt" style="background: #FFBB39;border: 4px solid #CFA64E;" class="circleNav"></div>
+                    <div id="maxtaskIt" style="background: #00CD4E;border: 4px solid #0EA642;" class="circleNav"></div>
+                </div>
+            </div>
+            <div class="navhead">
+                <p> Saved Tabs <img width="35" height="35" src="https://img.icons8.com/ios/30/FFFFFF/add-to-favorites--v1.png" ></p>
+            </div>
+            <ul id="popfavtab">
+            </ul>
+        </div>
+    </div>
+
+    <div class="container overly" id="notesbag">
+        <div class="multinav">
+
+            <div class="navSave navfav">
+                <div class="navhead">
+                    <p> Pages <img width="35" height="35" src="https://img.icons8.com/ios/30/FFFFFF/add-to-favorites--v1.png" > </p>
+                    <button  id="createnote">Add a Note</button>
+            </div>
+            <ul id="pagnotes"></ul>
+
+                <div class="navhead">
+                    <p> Categories <img width="35" height="35" src="https://img.icons8.com/ios/30/FFFFFF/add-to-favorites--v1.png" > </p>
+                    <!-- <button id="AddNote">Add a Note</button> -->
+            </div>
+            <ul id="pagnotes"></ul>
+                <div class="navhead">
+                    <p> Favorites <img width="35" height="35" src="https://img.icons8.com/ios/30/FFFFFF/add-to-favorites--v1.png" > </p>
+                    <!-- <button id="AddNote">Add a Note</button> -->
+            </div>
+            <ul id="pagnotes">
+            </ul>
+        </div>
+        
+    </div>
+        <div class="saveContainer">
+            <div class="tabdrop">
+                <div class="mainTabHead" id="mainTabHead">
+                    <h1>Notes </h1>
+                    <img id = "closeSave" width="50" height="50" src="https://img.icons8.com/ios/30/000000/delete-sign--v1.png" alt="delete-sign--v1"/>
+                    <div class="searchCont">
+                        <input type="text" id="searchbar" placeholder="Search here">
+                        <img width="35" height="35" src="https://img.icons8.com/ios/50/FFFFFF/search--v1.png" alt="search--v1"/>
+                    </div>
+                    
+                </div>
+                <div class="hellCont" id="hellCont">
+                    <div class="into">
+                        <p>Hello! </p>
+                        <h2>Vivek</h2>
+                        <p> How is you day Going on ?</p>
+                    </div>
+                    <div class="img">
+                        <img src="images/247845712_672665010721644_7276144830918521444_n.jpg" alt="">
+                    </div>
+                </div>
+                <div class="innerContainer">
+                    <div id="editorjs"></div>
+                    <div class="bottomarea">
+                        <button class="ntbtn" id="savenote"> Save</button>
+
+                        <img id = "closeSave" width="35" height="35" src="https://img.icons8.com/ios/30/000000/delete-sign--v1.png" alt="delete-sign--v1"/>
+                    </div>
+                </div>
+                
+                <div class="pagerender" id="pagerender">
+
+                </div>
+                    
+            <div class="maincontainer">
+
+            </div>
+        </div>
+       
+
+    </div>
+
+        
+        
+        <div id="content"></div>
+    </div>
+    <!-- <div id="custCur">hiii</div> -->
+
+    
+<!-- <div id="custCur"></div> -->
+    <script src="system/js/jquery.js"></script>
+    <script src="system/js/jscolor.js"></script>
+    <script src="pexels.js"></script>
+    <script src="system/js/main.js"></script>
+    <script src="system/js/drag.js"></script>
+    <script src="system/js/pomo.js"></script>
+    <script src="system/js/setting.js"></script>
+    <script src="system/js/task.js"></script>
+    <script src="system/js/tabsave.js"></script>
+    <script src="system/js/editor.js"></script>
+    <script src="system/js/editorbundle.js"></script>
+    <script src="system/js/notes.js"></script>
+
+    
+</body>
+</html>
+
+
+
+
+
+<!-- <div class="taskoption">
+    <div id = "donetsk">
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/25/d2d2d2/checkmark--v1.png" alt="checkmark--v1"/>
+    </div>
+    <div class="hideoption">
+        <img width="25" height="25" src="https://img.icons8.com/ios/25/FFFFFF/edit--v1.png" alt="edit--v1"/>
+        <img width="25" height="25" src="https://img.icons8.com/external-inkubators-detailed-outline-inkubators/25/FA5252/external-delete-email-inkubators-detailed-outline-inkubators.png" />
+    </div>
+</div> -->

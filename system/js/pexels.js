@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using Terser v5.9.0.
+ * Original file: /npm/pexels-api@1.0.5/index.js
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+var axios=require("axios"),fd=require("form-data"),fs=require("fs");module.exports=class{constructor(){this.root="https://www.pexels.com/api/v2",this.skey="H2jk9uKnhRmL6WPwh89zBezWvr"}async login(e,t){this.email=e,this.password=t;var a=await axios({url:this.root+"/auth/sign_in",method:"POST",data:{email:this.email,password:this.password},headers:{"secret-key":this.skey}});return this.token=a.data.token,this.uid=a.data.user_id,this.token}addToken(e){this.token=e}async upload(e){var t=await axios({url:this.root+"/uploads/url",method:"POST",data:{context:"android",file_types:["jpeg"]},headers:{"secret-key":this.skey,authorization:"Bearer "+this.token,"content-length":43}}),a=t.data[0].upload_url,s=t.data[0].medium_id,i=new fd,r=t.data[0].fields;for(var o in r)i.append(o,r[o]);i.append("file",fs.createReadStream(e));var d=this.token,h=this.skey,n=this.root;i.getLength((async function(e,t){await axios({url:a,method:"POST",data:i,headers:{"content-length":t,...i.getHeaders()}}),await axios({url:n+"/uploads/success",method:"POST",data:{media:[{id:s.toString()}]},headers:{authorization:"Bearer "+d,"secret-key":h}})}))}};
+//# sourceMappingURL=/sm/bf669b513256ef0c0ae6723a3a09cce865d923dcd4075019cd0e7048279b7bb5.map

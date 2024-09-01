@@ -1,0 +1,18 @@
+{
+    "manifest_version":3,
+    "name":"cassopiea",
+    "version":"1.0.0",
+    "description":"Elegant Desktop",
+      "permissions": [
+        "storage","scripting", "activeTab","nativeMessaging","tabs","tabCapture","alarms","notifications","inpeditname"
+      ],
+      "action":{
+        "default_popup":"popup.html"
+      },
+    "background": {
+      "service_worker": "system/js/background.js"
+    },
+    "chrome_url_overrides":{
+        "newtab":"index.html" 
+    } 
+}
